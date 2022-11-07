@@ -2,6 +2,8 @@ p{
     background-color: blue;
 }
 div {
+    height: auto;
+    width: auto;
     margin: 1 1 1 1;
     border: 1 1 1 1;
     border-color: red;
