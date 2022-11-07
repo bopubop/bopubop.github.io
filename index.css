@@ -1,3 +1,8 @@
 p{
     background-color: blue;
 }
+div {
+    margin: 1 1 1 1;
+    border: 1 1 1 1;
+ border-color: red;
+}
