@@ -2,9 +2,10 @@ p{
     background-color: blue;
 }
 div {
-    height: auto;
-    width: auto;
+    height: 200px;
+    width: 200px;
     margin: 1 1 1 1;
     border: 1 1 1 1;
     border-color: red;
+    border-width: 100px;
 }
