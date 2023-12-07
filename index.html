@@ -1,23 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <title>Мое Портфолио</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <h1>
-    <li>Serviso paslaugas</li> 
-    <li>Vazioukles remontas</li>
-    <li>Variklio remontas</li>  
-    <li>Daliu uzsakimas</li>
-    <li>Visa info tel.</li>
-    <span><a href=”tel:+37060709480”>+370 607 0 94 80</a></span>
-    
-    <p>PABRADE</p>
-  </h1>
- 
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Мое</span> Портфолио</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">Обо мне</a></li>
+                    <li><a href="projects.html">Проекты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="main">
+            <h1>Добро пожаловать в мое портфолио</h1>
+            <p>Здесь вы найдете информацию обо мне и моих проектах.</p>
+        </section>
+
+        <section id="about">
+            <h2>Обо мне</h2>
+            <p>Краткое описание вашего опыта и навыков.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Мои проекты</h2>
+            <p>Описание ваших проектов, выполненных в рамках работы в Salesforce.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Мое Портфолио, Создано в 2023</p>
+    </footer>
 </body>
 </html>
