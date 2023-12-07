@@ -95,5 +95,30 @@
     <footer>
         <p>Мое Портфолио, Создано в 2023</p>
     </footer>
+ <script>
+        function updateClock() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            // Добавление нуля перед одиночными цифрами
+            hours = hours < 10 ? '0' + hours : hours;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+
+            // Формирование строки времени
+            var timeString = hours + ':' + minutes + ':' + seconds;
+
+            // Отображение времени
+            document.getElementById('clock').textContent = timeString;
+        }
+
+        // Обновление часов каждую секунду
+        setInterval(updateClock, 1000);
+
+        // Инициализация часов при загрузке страницы
+        updateClock();
+    </script>
 </body>
 </html>
