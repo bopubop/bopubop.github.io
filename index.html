@@ -60,68 +60,6 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1><span class="highlight">Мое</span> Портфолио</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="index.html">Главная</a></li>
-                    <li><a href="about.html">Обо мне</a></li>
-                    <li><a href="projects.html">Проекты</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <div class="container">
-        <section id="main">
-            <h1>Добро пожаловать в мое портфолио</h1>
-            <p>Здесь вы найдете информацию обо мне и моих проектах.</p>
-            <section id="clock">
-                <!-- Место для отображения часов -->
-            </section>
-        </section>
-
-        <section id="about">
-            <h2>Обо мне</h2>
-            <p>Краткое описание вашего опыта и навыков.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Мои проекты</h2>
-            <p>Описание ваших проектов, выполненных в рамках работы в Salesforce.</p>
-        </section>
-    </div>
-
-    <footer>
-        <p>Мое Портфолио, Создано в 2023</p>
-    </footer>
- <script>
-        function updateClock() {
-            var now = new Date();
-            var hours = now.getHours();
-            var minutes = now.getMinutes();
-            var seconds = now.getSeconds();
-
-            // Добавление нуля перед одиночными цифрами
-            hours = hours < 10 ? '0' + hours : hours;
-            minutes = minutes < 10 ? '0' + minutes : minutes;
-            seconds = seconds < 10 ? '0' + seconds : seconds;
-
-            // Формирование строки времени
-            var timeString = hours + ':' + minutes + ':' + seconds;
-
-            // Отображение времени
-            document.getElementById('clock').textContent = timeString;
-        }
-
-        // Обновление часов каждую секунду
-        setInterval(updateClock, 1000);
-
-        // Инициализация часов при загрузке страницы
-        updateClock();
-    </script>
+    <iframe src="https://scratch.mit.edu/projects/1013912526/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
 </body>
 </html>
